@@ -1,0 +1,86 @@
+body {
+  background-image: url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=900&t=st=1689527510~exp=1689528110~hmac=49f21539f59262fac913bcd6c9fa262e7db3c48d4a5d0ed725d8146f696c77e2");
+  height: 150%;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #d0afeb;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.search input {
+  position: relative;
+  left: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search button {
+  position: relative;
+  left: 550px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search th {
+  background-color: #00008b;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: #e6e6fa;
+}
