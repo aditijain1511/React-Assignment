@@ -11,11 +11,11 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const defaultTheme = createTheme();
 const Login = ({ onLogin }) => {
-  const [email, setemail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleEmailChange = (event) => {
-    setemail(event.target.value);
+    setEmail(event.target.value);
   };
 
   const handlePasswordChange = (event) => {
@@ -25,7 +25,13 @@ const Login = ({ onLogin }) => {
   const handleLoginFormSubmit = (event) => {
     event.preventDefault();
     if (email && password) {
-      onLogin(email, password);
+      if (email === "aditi@gmail.com" && password === "adu") {
+        onLogin(email, password);
+      } else {
+        alert("Invalid email or password");
+        setEmail("");
+        setPassword("");
+      }
     }
   };
 
